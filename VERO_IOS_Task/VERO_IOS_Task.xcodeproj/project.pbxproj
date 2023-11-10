@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CE1AF8B2AF52233001D5BCE /* VERO_IOS_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AF8A2AF52233001D5BCE /* VERO_IOS_TaskApp.swift */; };
+		5CE1AF8D2AF52233001D5BCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AF8C2AF52233001D5BCE /* ContentView.swift */; };
+		5CE1AF8F2AF52234001D5BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1AF8E2AF52234001D5BCE /* Assets.xcassets */; };
+		5CE1AF922AF52234001D5BCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1AF912AF52234001D5BCE /* Preview Assets.xcassets */; };
+		5CE1AF942AF52234001D5BCE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AF932AF52234001D5BCE /* Persistence.swift */; };
+		5CE1AF972AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AF952AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld */; };
+		5CE1AFA12AF52234001D5BCE /* VERO_IOS_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFA02AF52234001D5BCE /* VERO_IOS_TaskTests.swift */; };
+		5CE1AFAB2AF52235001D5BCE /* VERO_IOS_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFAA2AF52235001D5BCE /* VERO_IOS_TaskUITests.swift */; };
+		5CE1AFAD2AF52235001D5BCE /* VERO_IOS_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFAC2AF52235001D5BCE /* VERO_IOS_TaskUITestsLaunchTests.swift */; };
+		5CE1AFBD2AF52C64001D5BCE /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFBC2AF52C64001D5BCE /* ListItems.swift */; };
+		5CE1AFC42AF52CBB001D5BCE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFC32AF52CBB001D5BCE /* HomeView.swift */; };
+		5CE1AFC62AF52CCB001D5BCE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFC52AF52CCB001D5BCE /* ListView.swift */; };
+		5CE1AFC82AF52CDB001D5BCE /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFC72AF52CDB001D5BCE /* TaskDetailView.swift */; };
+		5CE1AFCA2AF52D16001D5BCE /* QRSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFC92AF52D16001D5BCE /* QRSearchView.swift */; };
+		5CE1AFCD2AF52D3F001D5BCE /* TaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFCC2AF52D3F001D5BCE /* TaskCellView.swift */; };
+		5CE1AFD12AF52D72001D5BCE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFD02AF52D72001D5BCE /* FilterView.swift */; };
+		5CE1AFD52AF54541001D5BCE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFD42AF54541001D5BCE /* Extension.swift */; };
+		5CE1AFD72AF54E11001D5BCE /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFD62AF54E11001D5BCE /* ListViewModel.swift */; };
+		5CE1AFDC2AF55E11001D5BCE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFDB2AF55E11001D5BCE /* NetworkService.swift */; };
+		5CE1AFDE2AF55E5E001D5BCE /* AuthorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFDD2AF55E5E001D5BCE /* AuthorizationModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CE1AF9D2AF52234001D5BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CE1AF7F2AF52233001D5BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE1AF862AF52233001D5BCE;
+			remoteInfo = VERO_IOS_Task;
+		};
+		5CE1AFA72AF52235001D5BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CE1AF7F2AF52233001D5BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE1AF862AF52233001D5BCE;
+			remoteInfo = VERO_IOS_Task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CE1AF872AF52233001D5BCE /* VERO_IOS_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VERO_IOS_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE1AF8A2AF52233001D5BCE /* VERO_IOS_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VERO_IOS_TaskApp.swift; sourceTree = "<group>"; };
+		5CE1AF8C2AF52233001D5BCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CE1AF8E2AF52234001D5BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CE1AF912AF52234001D5BCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CE1AF932AF52234001D5BCE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5CE1AF962AF52234001D5BCE /* VERO_IOS_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VERO_IOS_Task.xcdatamodel; sourceTree = "<group>"; };
+		5CE1AF9C2AF52234001D5BCE /* VERO_IOS_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VERO_IOS_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE1AFA02AF52234001D5BCE /* VERO_IOS_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VERO_IOS_TaskTests.swift; sourceTree = "<group>"; };
+		5CE1AFA62AF52235001D5BCE /* VERO_IOS_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VERO_IOS_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE1AFAA2AF52235001D5BCE /* VERO_IOS_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VERO_IOS_TaskUITests.swift; sourceTree = "<group>"; };
+		5CE1AFAC2AF52235001D5BCE /* VERO_IOS_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VERO_IOS_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CE1AFBC2AF52C64001D5BCE /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
+		5CE1AFC32AF52CBB001D5BCE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5CE1AFC52AF52CCB001D5BCE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		5CE1AFC72AF52CDB001D5BCE /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		5CE1AFC92AF52D16001D5BCE /* QRSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRSearchView.swift; sourceTree = "<group>"; };
+		5CE1AFCC2AF52D3F001D5BCE /* TaskCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellView.swift; sourceTree = "<group>"; };
+		5CE1AFD02AF52D72001D5BCE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		5CE1AFD42AF54541001D5BCE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5CE1AFD62AF54E11001D5BCE /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		5CE1AFDB2AF55E11001D5BCE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5CE1AFDD2AF55E5E001D5BCE /* AuthorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CE1AF842AF52233001D5BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE1AF992AF52234001D5BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE1AFA32AF52235001D5BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CE1AF7E2AF52233001D5BCE = {
+			isa = PBXGroup;
+			children = (
+				5CE1AF892AF52233001D5BCE /* VERO_IOS_Task */,
+				5CE1AF9F2AF52234001D5BCE /* VERO_IOS_TaskTests */,
+				5CE1AFA92AF52235001D5BCE /* VERO_IOS_TaskUITests */,
+				5CE1AF882AF52233001D5BCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CE1AF882AF52233001D5BCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AF872AF52233001D5BCE /* VERO_IOS_Task.app */,
+				5CE1AF9C2AF52234001D5BCE /* VERO_IOS_TaskTests.xctest */,
+				5CE1AFA62AF52235001D5BCE /* VERO_IOS_TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CE1AF892AF52233001D5BCE /* VERO_IOS_Task */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFDA2AF55E00001D5BCE /* Services */,
+				5CE1AFCB2AF52D26001D5BCE /* Components */,
+				5CE1AFBB2AF52C49001D5BCE /* View */,
+				5CE1AFBA2AF52C30001D5BCE /* ViewModel */,
+				5CE1AFB92AF52C26001D5BCE /* Model */,
+				5CE1AF8C2AF52233001D5BCE /* ContentView.swift */,
+				5CE1AF932AF52234001D5BCE /* Persistence.swift */,
+				5CE1AFD42AF54541001D5BCE /* Extension.swift */,
+				5CE1AF8A2AF52233001D5BCE /* VERO_IOS_TaskApp.swift */,
+				5CE1AF8E2AF52234001D5BCE /* Assets.xcassets */,
+				5CE1AF952AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld */,
+				5CE1AF902AF52234001D5BCE /* Preview Content */,
+			);
+			path = VERO_IOS_Task;
+			sourceTree = "<group>";
+		};
+		5CE1AF902AF52234001D5BCE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AF912AF52234001D5BCE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CE1AF9F2AF52234001D5BCE /* VERO_IOS_TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFA02AF52234001D5BCE /* VERO_IOS_TaskTests.swift */,
+			);
+			path = VERO_IOS_TaskTests;
+			sourceTree = "<group>";
+		};
+		5CE1AFA92AF52235001D5BCE /* VERO_IOS_TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFAA2AF52235001D5BCE /* VERO_IOS_TaskUITests.swift */,
+				5CE1AFAC2AF52235001D5BCE /* VERO_IOS_TaskUITestsLaunchTests.swift */,
+			);
+			path = VERO_IOS_TaskUITests;
+			sourceTree = "<group>";
+		};
+		5CE1AFB92AF52C26001D5BCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFBC2AF52C64001D5BCE /* ListItems.swift */,
+				5CE1AFDD2AF55E5E001D5BCE /* AuthorizationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CE1AFBA2AF52C30001D5BCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFD62AF54E11001D5BCE /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5CE1AFBB2AF52C49001D5BCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFC32AF52CBB001D5BCE /* HomeView.swift */,
+				5CE1AFC52AF52CCB001D5BCE /* ListView.swift */,
+				5CE1AFC72AF52CDB001D5BCE /* TaskDetailView.swift */,
+				5CE1AFC92AF52D16001D5BCE /* QRSearchView.swift */,
+			);
+			name = View;
+			path = "vİEW";
+			sourceTree = "<group>";
+		};
+		5CE1AFCB2AF52D26001D5BCE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFCC2AF52D3F001D5BCE /* TaskCellView.swift */,
+				5CE1AFD02AF52D72001D5BCE /* FilterView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5CE1AFDA2AF55E00001D5BCE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1AFDB2AF55E11001D5BCE /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CE1AF862AF52233001D5BCE /* VERO_IOS_Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE1AFB02AF52235001D5BCE /* Build configuration list for PBXNativeTarget "VERO_IOS_Task" */;
+			buildPhases = (
+				5CE1AF832AF52233001D5BCE /* Sources */,
+				5CE1AF842AF52233001D5BCE /* Frameworks */,
+				5CE1AF852AF52233001D5BCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VERO_IOS_Task;
+			productName = VERO_IOS_Task;
+			productReference = 5CE1AF872AF52233001D5BCE /* VERO_IOS_Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CE1AF9B2AF52234001D5BCE /* VERO_IOS_TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE1AFB32AF52235001D5BCE /* Build configuration list for PBXNativeTarget "VERO_IOS_TaskTests" */;
+			buildPhases = (
+				5CE1AF982AF52234001D5BCE /* Sources */,
+				5CE1AF992AF52234001D5BCE /* Frameworks */,
+				5CE1AF9A2AF52234001D5BCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CE1AF9E2AF52234001D5BCE /* PBXTargetDependency */,
+			);
+			name = VERO_IOS_TaskTests;
+			productName = VERO_IOS_TaskTests;
+			productReference = 5CE1AF9C2AF52234001D5BCE /* VERO_IOS_TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CE1AFA52AF52235001D5BCE /* VERO_IOS_TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE1AFB62AF52235001D5BCE /* Build configuration list for PBXNativeTarget "VERO_IOS_TaskUITests" */;
+			buildPhases = (
+				5CE1AFA22AF52235001D5BCE /* Sources */,
+				5CE1AFA32AF52235001D5BCE /* Frameworks */,
+				5CE1AFA42AF52235001D5BCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CE1AFA82AF52235001D5BCE /* PBXTargetDependency */,
+			);
+			name = VERO_IOS_TaskUITests;
+			productName = VERO_IOS_TaskUITests;
+			productReference = 5CE1AFA62AF52235001D5BCE /* VERO_IOS_TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CE1AF7F2AF52233001D5BCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5CE1AF862AF52233001D5BCE = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					5CE1AF9B2AF52234001D5BCE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5CE1AF862AF52233001D5BCE;
+					};
+					5CE1AFA52AF52235001D5BCE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5CE1AF862AF52233001D5BCE;
+					};
+				};
+			};
+			buildConfigurationList = 5CE1AF822AF52233001D5BCE /* Build configuration list for PBXProject "VERO_IOS_Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CE1AF7E2AF52233001D5BCE;
+			productRefGroup = 5CE1AF882AF52233001D5BCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CE1AF862AF52233001D5BCE /* VERO_IOS_Task */,
+				5CE1AF9B2AF52234001D5BCE /* VERO_IOS_TaskTests */,
+				5CE1AFA52AF52235001D5BCE /* VERO_IOS_TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CE1AF852AF52233001D5BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1AF922AF52234001D5BCE /* Preview Assets.xcassets in Resources */,
+				5CE1AF8F2AF52234001D5BCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE1AF9A2AF52234001D5BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE1AFA42AF52235001D5BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CE1AF832AF52233001D5BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1AF942AF52234001D5BCE /* Persistence.swift in Sources */,
+				5CE1AFC82AF52CDB001D5BCE /* TaskDetailView.swift in Sources */,
+				5CE1AF8D2AF52233001D5BCE /* ContentView.swift in Sources */,
+				5CE1AFD12AF52D72001D5BCE /* FilterView.swift in Sources */,
+				5CE1AFD72AF54E11001D5BCE /* ListViewModel.swift in Sources */,
+				5CE1AF972AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld in Sources */,
+				5CE1AFDC2AF55E11001D5BCE /* NetworkService.swift in Sources */,
+				5CE1AFC62AF52CCB001D5BCE /* ListView.swift in Sources */,
+				5CE1AFC42AF52CBB001D5BCE /* HomeView.swift in Sources */,
+				5CE1AF8B2AF52233001D5BCE /* VERO_IOS_TaskApp.swift in Sources */,
+				5CE1AFD52AF54541001D5BCE /* Extension.swift in Sources */,
+				5CE1AFDE2AF55E5E001D5BCE /* AuthorizationModel.swift in Sources */,
+				5CE1AFBD2AF52C64001D5BCE /* ListItems.swift in Sources */,
+				5CE1AFCA2AF52D16001D5BCE /* QRSearchView.swift in Sources */,
+				5CE1AFCD2AF52D3F001D5BCE /* TaskCellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE1AF982AF52234001D5BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1AFA12AF52234001D5BCE /* VERO_IOS_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE1AFA22AF52235001D5BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1AFAB2AF52235001D5BCE /* VERO_IOS_TaskUITests.swift in Sources */,
+				5CE1AFAD2AF52235001D5BCE /* VERO_IOS_TaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CE1AF9E2AF52234001D5BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CE1AF862AF52233001D5BCE /* VERO_IOS_Task */;
+			targetProxy = 5CE1AF9D2AF52234001D5BCE /* PBXContainerItemProxy */;
+		};
+		5CE1AFA82AF52235001D5BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CE1AF862AF52233001D5BCE /* VERO_IOS_Task */;
+			targetProxy = 5CE1AFA72AF52235001D5BCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5CE1AFAE2AF52235001D5BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CE1AFAF2AF52235001D5BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CE1AFB12AF52235001D5BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VERO_IOS_Task/Preview Content\"";
+				DEVELOPMENT_TEAM = 9RVC283PBZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RaSoft.VERO-IOS-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CE1AFB22AF52235001D5BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VERO_IOS_Task/Preview Content\"";
+				DEVELOPMENT_TEAM = 9RVC283PBZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RaSoft.VERO-IOS-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CE1AFB42AF52235001D5BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RVC283PBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RaSoft.VERO-IOS-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VERO_IOS_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VERO_IOS_Task";
+			};
+			name = Debug;
+		};
+		5CE1AFB52AF52235001D5BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RVC283PBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RaSoft.VERO-IOS-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VERO_IOS_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VERO_IOS_Task";
+			};
+			name = Release;
+		};
+		5CE1AFB72AF52235001D5BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RVC283PBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RaSoft.VERO-IOS-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VERO_IOS_Task;
+			};
+			name = Debug;
+		};
+		5CE1AFB82AF52235001D5BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RVC283PBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RaSoft.VERO-IOS-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VERO_IOS_Task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CE1AF822AF52233001D5BCE /* Build configuration list for PBXProject "VERO_IOS_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE1AFAE2AF52235001D5BCE /* Debug */,
+				5CE1AFAF2AF52235001D5BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE1AFB02AF52235001D5BCE /* Build configuration list for PBXNativeTarget "VERO_IOS_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE1AFB12AF52235001D5BCE /* Debug */,
+				5CE1AFB22AF52235001D5BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE1AFB32AF52235001D5BCE /* Build configuration list for PBXNativeTarget "VERO_IOS_TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE1AFB42AF52235001D5BCE /* Debug */,
+				5CE1AFB52AF52235001D5BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE1AFB62AF52235001D5BCE /* Build configuration list for PBXNativeTarget "VERO_IOS_TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE1AFB72AF52235001D5BCE /* Debug */,
+				5CE1AFB82AF52235001D5BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CE1AF952AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CE1AF962AF52234001D5BCE /* VERO_IOS_Task.xcdatamodel */,
+			);
+			currentVersion = 5CE1AF962AF52234001D5BCE /* VERO_IOS_Task.xcdatamodel */;
+			path = VERO_IOS_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CE1AF7F2AF52233001D5BCE /* Project object */;
+}
