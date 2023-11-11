@@ -7,7 +7,6 @@ import CoreData
 class ListViewModel: ObservableObject {
     // Published properties for data binding
     @Published var tasks: [Task] = []
-    @Published var searchText = ""
     
     // Cancellable set to manage Combine subscriptions
     private var cancellables: Set<AnyCancellable> = []
@@ -17,7 +16,9 @@ class ListViewModel: ObservableObject {
     
     // Core Data container for local storage
     let container: NSPersistentContainer
+    
 
+    
     init() {
         // Core Data container initialization
         container = NSPersistentContainer(name: "VERO_IOS_Task")
@@ -49,6 +50,7 @@ class ListViewModel: ObservableObject {
     
     // Fetch tasks from the network
     func fetchTasks() {
+        tasks = []
         networkService.fetchTasks()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
@@ -62,7 +64,7 @@ class ListViewModel: ObservableObject {
                 for task in tasks {
                     var taskWithID = task
                     taskWithID.id = UUID()
-//                    print(taskWithID)
+//                 print(taskWithID)
                     self.tasks.append(taskWithID)
                     self.saveTaskToCoreData(task: taskWithID)
                 }

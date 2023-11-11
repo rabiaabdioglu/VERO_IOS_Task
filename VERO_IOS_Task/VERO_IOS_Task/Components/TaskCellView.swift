@@ -19,11 +19,16 @@ struct TaskCellView: View {
                     .font(.title3)
                     .padding(.trailing, 10)
                 Spacer()
-                Circle()
-                    .frame(width: 20, height: 20)
-                    .foregroundColor(Color(hex: task.colorCode))
-                    .padding(.trailing)
-            }        .padding(10)
+                VStack{  Circle()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(Color(hex: task.colorCode))
+                        .padding(.trailing)
+                    Text(task.colorCode)
+                        .font(.caption2)
+                        .fontWeight(.ultraLight)
+                    
+                }
+            }
             
             VStack(alignment: .leading, spacing: 10) {
 
@@ -35,7 +40,8 @@ struct TaskCellView: View {
             .padding(10)
 
         }     
-        .frame(maxHeight: 120) 
+        .font(.custom("SFPro-Regular", size: 15))
+        .frame(maxHeight: 120)
         .foregroundColor(.customText)
         .padding(10)
        

@@ -11,6 +11,7 @@ import SwiftUI
 extension Color {
     static let customText = Color(red: 0.30, green: 0.30, blue: 0.30)
     static let customCircle = Color.yellow
+    static let customCircleText = Color(red: 211 / 255, green: 211 / 255, blue: 211 / 255)
 
     init(hex: String) {
         var hexSanitized = hex

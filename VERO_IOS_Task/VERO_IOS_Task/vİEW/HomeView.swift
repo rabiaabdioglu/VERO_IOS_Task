@@ -7,30 +7,33 @@
 
 import SwiftUI
 
+// HomeView.swift
 struct HomeView: View {
+    @State private var selectedTab: Int = 0
+    @State  var QRSearchText = ""
+
     var body: some View {
-        TabView {
-                       ListView()
-                           .tabItem {
-                               Image(systemName: "list.dash")
-                               Text("List")
-                           }
+        TabView(selection: $selectedTab) {
+            ListView(searchTextForQR : $QRSearchText)
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("List")
+                }
+                .tag(0)
 
-                       QRSearchView()
-                           .tabItem {
-                               Image(systemName: "qrcode.viewfinder")
-                               Text("QR")
-                           }
-                   }        .navigationBarBackButtonHidden(true)
-
-               }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
+            QRSearchView(selectedTab: $selectedTab, QRSearchText: $QRSearchText)
+                .tabItem {
+                    Image(systemName: "qrcode.viewfinder")
+                    Text("QR")
+                }
+                .tag(1)
+        }
+        .navigationBarBackButtonHidden(true)
+        .font(.custom("SFPro-Regular", size: 15))
+        .foregroundColor(.customText)
     }
 }
+
 
 #Preview {
     HomeView()

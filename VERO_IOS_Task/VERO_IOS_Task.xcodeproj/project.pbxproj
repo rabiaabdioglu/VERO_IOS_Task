@@ -22,11 +22,11 @@
 		5CE1AFC82AF52CDB001D5BCE /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFC72AF52CDB001D5BCE /* TaskDetailView.swift */; };
 		5CE1AFCA2AF52D16001D5BCE /* QRSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFC92AF52D16001D5BCE /* QRSearchView.swift */; };
 		5CE1AFCD2AF52D3F001D5BCE /* TaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFCC2AF52D3F001D5BCE /* TaskCellView.swift */; };
-		5CE1AFD12AF52D72001D5BCE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFD02AF52D72001D5BCE /* FilterView.swift */; };
 		5CE1AFD52AF54541001D5BCE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFD42AF54541001D5BCE /* Extension.swift */; };
 		5CE1AFD72AF54E11001D5BCE /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFD62AF54E11001D5BCE /* ListViewModel.swift */; };
 		5CE1AFDC2AF55E11001D5BCE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFDB2AF55E11001D5BCE /* NetworkService.swift */; };
 		5CE1AFDE2AF55E5E001D5BCE /* AuthorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1AFDD2AF55E5E001D5BCE /* AuthorizationModel.swift */; };
+		5CFD23302AFEE1FB00D7893C /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFD232F2AFEE1FB00D7893C /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +65,11 @@
 		5CE1AFC72AF52CDB001D5BCE /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		5CE1AFC92AF52D16001D5BCE /* QRSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRSearchView.swift; sourceTree = "<group>"; };
 		5CE1AFCC2AF52D3F001D5BCE /* TaskCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellView.swift; sourceTree = "<group>"; };
-		5CE1AFD02AF52D72001D5BCE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		5CE1AFD42AF54541001D5BCE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5CE1AFD62AF54E11001D5BCE /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		5CE1AFDB2AF55E11001D5BCE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5CE1AFDD2AF55E5E001D5BCE /* AuthorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModel.swift; sourceTree = "<group>"; };
+		5CFD23312AFEE28700D7893C /* VERO-IOS-Task-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "VERO-IOS-Task-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFD23302AFEE1FB00D7893C /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +121,7 @@
 		5CE1AF892AF52233001D5BCE /* VERO_IOS_Task */ = {
 			isa = PBXGroup;
 			children = (
+				5CFD23312AFEE28700D7893C /* VERO-IOS-Task-Info.plist */,
 				5CE1AFDA2AF55E00001D5BCE /* Services */,
 				5CE1AFCB2AF52D26001D5BCE /* Components */,
 				5CE1AFBB2AF52C49001D5BCE /* View */,
@@ -194,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				5CE1AFCC2AF52D3F001D5BCE /* TaskCellView.swift */,
-				5CE1AFD02AF52D72001D5BCE /* FilterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -223,6 +224,9 @@
 			dependencies = (
 			);
 			name = VERO_IOS_Task;
+			packageProductDependencies = (
+				5CFD232F2AFEE1FB00D7893C /* CodeScanner */,
+			);
 			productName = VERO_IOS_Task;
 			productReference = 5CE1AF872AF52233001D5BCE /* VERO_IOS_Task.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +299,9 @@
 				Base,
 			);
 			mainGroup = 5CE1AF7E2AF52233001D5BCE;
+			packageReferences = (
+				5CFD232E2AFEE1FB00D7893C /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 5CE1AF882AF52233001D5BCE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,7 +347,6 @@
 				5CE1AF942AF52234001D5BCE /* Persistence.swift in Sources */,
 				5CE1AFC82AF52CDB001D5BCE /* TaskDetailView.swift in Sources */,
 				5CE1AF8D2AF52233001D5BCE /* ContentView.swift in Sources */,
-				5CE1AFD12AF52D72001D5BCE /* FilterView.swift in Sources */,
 				5CE1AFD72AF54E11001D5BCE /* ListViewModel.swift in Sources */,
 				5CE1AF972AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld in Sources */,
 				5CE1AFDC2AF55E11001D5BCE /* NetworkService.swift in Sources */,
@@ -518,6 +524,8 @@
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VERO-IOS-Task-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs a camera to scan the QR code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,6 +556,8 @@
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VERO-IOS-Task-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs a camera to scan the QR code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -683,6 +693,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CFD232E2AFEE1FB00D7893C /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CFD232F2AFEE1FB00D7893C /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CFD232E2AFEE1FB00D7893C /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5CE1AF952AF52234001D5BCE /* VERO_IOS_Task.xcdatamodeld */ = {
